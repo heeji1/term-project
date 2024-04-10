@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first property</title>
+  <style>
+    * { 
+      box-sizing: border-box;
+          margin: 0;}
+    body {
+      font-family: serif; 
+      background-color: #BED7DC;
+    }
+    #wrapper {
+      background-color: #F1EEDC;
+    }
+    header {
+      color: #776B5D;
+      font-weight: 1000;
+      font-style: italic;
+      background-color: #BED7DC;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      padding: .5em 0 .5em 5.5em;
+    }
+    main {   
+      background-color: #FFFFFF;
+          color: #000000;
+      padding: 1em; 
+    }
+    aside { 
+      text-align: center; 
+    }
+    footer {
+      background-color: #D1BB9E;
+      font-size: 70%;
+      text-align: center;
+      padding: 0.5em 0;
+      color: #607274;
+    }
+    img { 
+      padding: 1em; 
+    }
+    h2 {
+      color: #607274;
+      font-weight: 1000;
+      text-align: center;
+    }
+    nav ul { 
+      list-style-type: none;
+          padding-left: 0; 
+      border-top: 1px solid #A79277;}
+    nav li { 
+      border-bottom: 1px solid #A79277;  
+          text-align: center;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      font-weight: 1000;
+      font-style: italic;
+    }
+    nav a, #email{ 
+      text-decoration: none;
+        font-weight: bold;
+        color:#A79277;
+    }
+    nav a :link {
+      color: #607274;
+    }
+    nav a :hover {
+      color: #607274;
+    }
+    nav a :visited {
+      color:#A79277;
+    }
+    header, nav, main, footer, aside, figure { 
+      display: block; 
+    }
+    
+    @media (min-width: 500px) {
+      #wrapper { 
+         display: grid; 
+        grid-template-columns: 50% auto;
+        grid-template-rows: auto auto auto auto;
+         }
+      header { 
+        grid-row: 1 / 2; grid-column: 1 / 3; }
+      nav    { 
+        grid-row: 2 / 3; grid-column: 1 / 3; }
+      main   { 
+        grid-row: 3 / 4; grid-column: 1 / 2; }
+      aside  { 
+        grid-row: 3 / 4; grid-column: 2 / 3; }
+      footer {
+         grid-row: 4 / 5; grid-column: 1 / 3; }
+      nav ul { 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        justify-content: space-around; }
+      nav ul li { 
+        border-bottom: none; } 
+      }
+      
+      @media (min-width: 1024px) {
+      body     { 
+        background-color: #cfcfcf; 
+      }
+      nav ul { 
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: nowrap; 
+      }
+      #wrapper { 
+        width: 80%; 
+            margin: auto; 
+            max-width: 1200px; 
+            display: grid; 
+        grid-template-columns: 150px auto auto;
+        grid-template-rows: auto auto auto ; 
+      }
+      header { 
+        grid-row: 1 / 2; 
+        grid-column: 1 / 4; 
+      }
+      nav    { 
+        grid-row: 2 / 3; 
+        grid-column: 1 / 2; 
+      }
+      main   { 
+        grid-row: 2 / 3; 
+        grid-column: 2 / 3; 
+      }
+      aside  { 
+      grid-row: 2 / 3; 
+      grid-column: 3 / 4; 
+      }
+      footer { 
+        grid-row: 3 / 4; 
+        grid-column: 1 / 4; 
+      }
+      } 
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Olivia Martin Realty Inc.</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="1.Homepage.html">Home</a></li>
+        <li><a href="2.available property.html">Listings</a></li>
+        <li><a href="6.contact form.html">Contact</a></li>
+        <li><a href="7.site map and credit.html">Sitemap</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>42 WOOD CRESCENT Essa, ON, L0M 1B5</h2>
+      <p><img src="image/house1.jpg" height="50%"  width="100%" alt="house1">
+      <ul> This meticulously designed link home, only 4 years old with a Tarion warranty, offers tranquillity & quality craftsmanship in a master-planned community. Nestled on an oversized lot with access to nearby parks, trails & outdoor activities. Fishing enthusiasts can enjoy the Pine & Nottawasaga Rivers within a short drive. Conveniently located 15 minutes from Barrie, 25 minutes from Wasaga Beach, & 15 minutes from Alliston. The open-concept chef's kitchen presents high-end Café appliances, a large island with breakfast bar seating, timeless cabinetry & a quartz countertop & backsplash. The primary bedroom boasts a walk-in closet & a luxurious 5-piece ensuite with a soaker tub & glass-walled shower. Three additional bedrooms feature large windows, a semi-ensuite & additional ensuite. A second-floor laundry adds practicality & the unspoiled walkout basement awaits creative finishing touches.
+        <li><b>Price:</b> $949,900</li>
+        <li><b> Adress:</b> 42 WOOD CRESCENT Essa, ON, L0M 1B5</li>
+        <li><b>Number and type of rooms:</b> 4 bedrooms, 4 bathrooms</li>
+        <li><b>Lot size:</b> 2,343 sqft</li>
+      </ul>
+      </p>
+    </main>
+
+    <aside>
+      <figure>
+        <img src="image/woman.jpg" width="300" height="400" alt="Woman">
+        <br>
+        <h2>Phone:</h2> (416) 123-4567
+        <br>
+        <h2>Email:</h2><a href="mailto:hlee340@my.centennialcollege.ca"><span id="email">hlee340@my.centennialcollege.ca</span></a>
+      </figure>
+    </aside>
+
+    <footer>
+      Copyright &copy; 2024.04.09
+    </footer>
+  </div>
+</body>
+</html>

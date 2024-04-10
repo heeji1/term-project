@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available property</title>
+  <style>
+    * { 
+      box-sizing: border-box;
+      margin: 0;}
+    body {
+      font-family: serif; 
+      background-color: #BED7DC;
+    }
+    #wrapper {
+      background-color: #F1EEDC;
+    }
+    header {
+      color: #776B5D;
+      font-weight: 1000;
+      font-style: italic;
+      background-color: #BED7DC;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      padding: .5em 0 .5em 5.5em;
+    }
+    main {   
+      background-color: #FFFFFF;
+          color: #000000;
+      padding: 1em; 
+    }
+    aside { 
+      text-align: center; 
+    }
+    footer {
+      background-color: #D1BB9E;
+      font-size: 70%;
+      text-align: center;
+      padding: 0.5em 0;
+      color: #607274;
+    }
+    img { 
+      padding: 1em; 
+    }
+    h2 {
+      color: #607274;
+      font-weight: 1000;
+    }
+    nav ul { 
+      list-style-type: none;
+      adding-left: 0; 
+      border-top: 1px solid #A79277;}
+    .floatRight{
+      float:right;
+      margin-left:6px;
+    }
+    nav li { 
+      border-bottom: 1px solid #A79277;  
+      text-align: center;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      font-weight: 1000;
+      font-style: italic;
+    }
+    nav a, #email{ 
+      text-decoration: none;
+        font-weight: bold;
+        color:#A79277;
+    }
+    nav a :link {
+      color: #607274;
+    }
+    nav a :hover {
+      color: #607274;
+    }
+    nav a :visited {
+      color:#A79277;
+    }
+    nav #page { 
+      font-weight: bold;
+      color: #607274; 
+    }
+    header, nav, main, footer, aside, figure { 
+      display: block; 
+    }
+    
+    @media (min-width: 500px) {
+      #wrapper { 
+         display: grid; 
+        grid-template-columns: 50% auto;
+        grid-template-rows: auto auto auto auto;
+         }
+      header { 
+        grid-row: 1 / 2; grid-column: 1 / 3; }
+      nav    { 
+        grid-row: 2 / 3; grid-column: 1 / 3; }
+      main   { 
+        grid-row: 3 / 4; grid-column: 1 / 2; }
+      aside  { 
+        grid-row: 3 / 4; grid-column: 2 / 3; }
+      footer {
+         grid-row: 4 / 5; grid-column: 1 / 3; }
+      nav ul { 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        justify-content: space-around; }
+      nav ul li { 
+        border-bottom: none; } 
+      }
+      
+      @media (min-width: 1024px) {
+      body     { 
+        background-color: #cfcfcf; 
+      }
+      nav ul { 
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: nowrap; 
+      }
+      #wrapper { 
+        width: 80%; 
+            margin: auto; 
+            max-width: 1200px; 
+            display: grid; 
+        grid-template-columns: 150px auto auto;
+        grid-template-rows: auto auto auto ; 
+      }
+      header { 
+        grid-row: 1 / 2; 
+        grid-column: 1 / 4; 
+      }
+      nav    { 
+        grid-row: 2 / 3; 
+        grid-column: 1 / 2; 
+      }
+      main   { 
+        grid-row: 2 / 3; 
+        grid-column: 2 / 3; 
+      }
+      aside  { 
+      grid-row: 2 / 3; 
+      grid-column: 3 / 4; 
+      }
+      footer { 
+        grid-row: 3 / 4; 
+        grid-column: 1 / 4; 
+      }
+      } 
+      .clearBoth {
+        clear:left;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Olivia Martin Realty Inc.</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="1.Homepage.html">Home</a></li>
+        <li id="page">Listings</li>
+        <li><a href="6.contact form.html">Contact</a></li>
+        <li><a href="7.site map and credit.html">Sitemap</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Properties for Sale</h2>
+      <p class="clearBoth">
+        <a href="3.first property.html">
+          <img src="image/house1.jpg" alt="house1" height="60%"  width="80%"></a><br>
+        “Step into this charming two-story residence, where classic elegance meets modern comfort.
+        Wrapped in light grey wooden panels with crisp white trims, this home is a haven of tranquility set
+        against a backdrop of lush greenery. Each room is drenched in sunlight streaming through generous windows,
+        creating a warm, inviting retreat. The cozy porch invites you to unwind, making this house not just a dwelling,
+        but a place to call home.”<br>
+        <b>Price:</b> $949,900
+      </p>
+      
+      <p class="clearBoth">
+        <a href="4.second property.html">
+          <img src="image/house2.jpg" alt="house2" height="60%"  width="80%"></a><br>
+        “Discover the epitome of luxury and elegance in this exquisite home, where classic design meets contemporary
+        flair. Set against the serene backdrop of a clear blue sky, this property features a symmetrical facade adorned
+        with cream-colored walls and stone accents. The grand arched window and dark wood double doors create an
+        inviting
+        entrance, while the meticulously landscaped lawn and strategic greenery add to its curb appeal. Inside, the
+        spacious rooms are illuminated by natural light, promising comfort and style in every corner. This home is not
+        just a living space, but a statement of sophistication.”<br>
+        <b>Price:</b>  $399,510
+      </p>
+
+      <p class="clearBoth">
+        <a href="5.third property.html">
+          <img src="image/house3.jpg" alt="house3" height="60%"  width="80%"></a><br>
+        “Welcome to this breathtaking two-story abode, where luxury meets leisure. The white exterior, crowned with a
+        metallic roof, complements the clear blue skies. Expansive balconies offer a tranquil space to enjoy the
+        outdoors,
+        while the inviting pool area is perfect for serene swims or vibrant gatherings. Step inside to experience a
+        haven of comfort, bathed in natural light from the large windows, promising an exclusive living experience.”
+      <br>
+      <b>Price:</b> $913,460
+      </p>
+    </main>
+
+    <aside>
+      <figure>
+        <img src="image/woman.jpg" width="300" height="400" alt="Woman">
+        <br>
+        <h2>Phone:</h2> (416) 123-4567
+        <br>
+        <h2>Email:</h2><a href="mailto:hlee340@my.centennialcollege.ca"><span id="email">hlee340@my.centennialcollege.ca</span></a>
+      </figure>
+    </aside>
+
+    <footer>
+      Copyright &copy; 2024.04.09
+    </footer>
+  </div>
+</body>
+
+</html>
